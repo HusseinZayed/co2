@@ -22,4 +22,4 @@ FUELCONSUMPTION_COMB_MPG =  st.number_input('FUEL CONSUMPTION COMB_MPG' , min_va
 output = model.predict([[engine_size, cylinder, FUELCONSUMPTION_CITY,FUELCONSUMPTION_HWY, FUELCONSUMPTION_COMB,FUELCONSUMPTION_COMB_MPG]])
 
 #display the result
-st.write("the predict CO2 of car is : ",output)
+st.write("the predict CO2 of car is : ",output[0])
